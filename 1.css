@@ -5,6 +5,8 @@ body{
 h1 {
     text-align: center;
     color: #eee;
+     font-size:5vw;
+}
 }
 h1:hover{
   color:rgba(179, 0, 0, 0.877);
@@ -29,3 +31,6 @@ h2{
     color: black;
 }
 @media(max-width:768px)
+img{
+    max-width:100%;
+}
