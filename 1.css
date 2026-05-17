@@ -1,0 +1,30 @@
+body{
+    background: linear-gradient(to right, rgb(248, 248, 248), rgb(194, 1, 1));
+}
+
+h1 {
+    text-align: center;
+    color: #eee;
+}
+h1:hover{
+  color:rgba(179, 0, 0, 0.877);
+}
+.sticker{
+    position: fixed;      
+    bottom: 20px;         
+    right: 20px;          
+    width: 120px; 
+
+}
+.sticker{
+    position: fixed;      
+    bottom: 20px;         
+    right: 20px;          
+    width: 120px; 
+    top: 10px;
+    left: 10px;         
+}
+h2{
+    text-align: center;
+    color: black;
+}
