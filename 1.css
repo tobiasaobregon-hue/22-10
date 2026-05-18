@@ -19,15 +19,8 @@ h1:hover{
     top: 10px;
     left: 10px;         
 }
-h2{
-    text-align: center;
-    color:width;
-}
+
 @media(max-width:768px)
 img{
     max-width:100%;
-}
-h3{
-    texte-align: center;
-    color:width;
 }
