@@ -6,6 +6,33 @@
     <title>Document</title>
 <link rel="stylesheet" href="1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:#111;
+}
+
+.confeti{
+    position:fixed;
+    top:-20px;
+    animation: caer linear forwards;
+    pointer-events:none;
+}
+
+@keyframes caer{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    100%{
+        transform: translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+</style>
 </head>
 <body>
     <h1>Hoy cumplimos 2 años</h1>
@@ -13,6 +40,38 @@
     <h2>22/10 ❤️</h2>
 
     <h3>Hoy cumplimos dos años y la verdad siento muchas cosas me enamore muy rapido de vos</h3>
+    
+<script>
+
+const emojis = ["💖","💕","💘","💝","❤️","🩷"];
+
+function crearConfeti(){
+
+    const confeti = document.createElement("div");
+    confeti.classList.add("confeti");
+
+    confeti.innerHTML =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+    confeti.style.left = Math.random() * 100 + "vw";
+
+    confeti.style.fontSize =
+        (Math.random() * 25 + 15) + "px";
+
+    confeti.style.animationDuration =
+        (Math.random() * 3 + 2) + "s";
+
+    document.body.appendChild(confeti);
+
+    setTimeout(() => {
+        confeti.remove();
+    }, 5000);
+}
+
+setInterval(crearConfeti, 120);
+
+</script>
+
 
  <img src="stiker.jpg" class="sticker" alt="Sticker">
 </body>
