@@ -10,7 +10,14 @@ h1 {
 h1:hover{
   color:rgba(179, 0, 0, 0.877);
 }
-
+h2 {
+    texte-align: center;
+    color:width;
+    }
+h3 {
+    texte-align: center;
+    color:width;
+}
 .sticker{
     position: fixed;      
     bottom: 20px;         
