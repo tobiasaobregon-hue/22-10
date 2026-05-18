@@ -7,17 +7,10 @@ h1 {
     color: #eee;
      font-size:5vw;
 }
-}
 h1:hover{
   color:rgba(179, 0, 0, 0.877);
 }
-.sticker{
-    position: fixed;      
-    bottom: 20px;         
-    right: 20px;          
-    width: 120px; 
 
-}
 .sticker{
     position: fixed;      
     bottom: 20px;         
@@ -28,7 +21,7 @@ h1:hover{
 }
 h2{
     text-align: center;
-    color: black;
+    color:width;
 }
 @media(max-width:768px)
 img{
