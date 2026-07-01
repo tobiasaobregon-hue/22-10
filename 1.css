@@ -18,8 +18,36 @@ h1:hover{
     top: 10px;
     left: 10px;         
 }
+.logo{
+    position: fixed;     
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    z-index: 1000;
+}
 
-@media(max-width:768px)
-img{
-    max-width:100%;
+.logo img{
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+
+    .logo{
+        top: 10px;
+        left: 10px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
 }
