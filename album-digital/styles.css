@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Georgia, serif;
+background: #f3dfe3;
+min-height: 100vh;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: #4a3035;
+```
+
+}
+
+.contenedor {
+width: 100%;
+min-height: 100vh;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 20px;
+```
+
+}
+
+.libro {
+width: 850px;
+max-width: 100%;
+min-height: 650px;
+
+```
+position: relative;
+
+background: #fffaf5;
+
+border-radius: 15px;
+
+box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25);
+
+overflow: hidden;
+```
+
+}
+
+/* PÁGINAS */
+
+.pagina {
+display: none;
+
+```
+min-height: 600px;
+
+padding: 60px 70px 100px;
+
+animation: aparecer 0.5s ease;
+```
+
+}
+
+.pagina.activa {
+display: block;
+}
+
+@keyframes aparecer {
+
+```
+from {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+```
+
+}
+
+/* CONTENIDO */
+
+.contenido {
+text-align: center;
+}
+
+.contenido h1 {
+font-size: 50px;
+margin: 15px 0;
+}
+
+.contenido h2 {
+font-size: 35px;
+margin-bottom: 25px;
+}
+
+.contenido p {
+font-size: 18px;
+line-height: 1.7;
+margin: 20px auto;
+
+```
+max-width: 650px;
+```
+
+}
+
+.pequeno {
+letter-spacing: 4px;
+font-size: 13px !important;
+}
+
+.fecha {
+font-size: 25px !important;
+font-weight: bold;
+}
+
+/* PORTADA */
+
+.portada {
+padding-top: 30px;
+}
+
+.foto-portada {
+width: 300px;
+height: 300px;
+
+```
+object-fit: cover;
+
+border-radius: 50%;
+
+border: 8px solid white;
+
+box-shadow:
+    0 5px 20px rgba(0,0,0,0.2);
+```
+
+}
+
+/* FOTOS */
+
+.foto {
+width: 70%;
+max-width: 500px;
+
+```
+height: 300px;
+
+object-fit: cover;
+
+border-radius: 12px;
+
+box-shadow:
+    0 8px 20px rgba(0,0,0,0.2);
+```
+
+}
+
+/* GALERÍA */
+
+.galeria {
+display: grid;
+
+```
+grid-template-columns: repeat(2, 1fr);
+
+gap: 15px;
+
+max-width: 600px;
+
+margin: auto;
+```
+
+}
+
+.galeria img {
+width: 100%;
+height: 180px;
+
+```
+object-fit: cover;
+
+border-radius: 10px;
+
+transition: transform 0.3s;
+```
+
+}
+
+.galeria img:hover {
+transform: scale(1.03);
+}
+
+/* NÚMERO */
+
+.numero {
+font-size: 14px;
+letter-spacing: 3px;
+opacity: 0.6;
+}
+
+/* CARTA */
+
+.carta {
+max-width: 650px;
+
+```
+margin: auto;
+
+padding: 35px;
+
+background: #fff3f5;
+
+border-radius: 12px;
+
+box-shadow:
+    inset 0 0 20px rgba(0,0,0,0.04);
+```
+
+}
+
+.firma {
+font-weight: bold;
+}
+
+/* TIMELINE */
+
+.timeline {
+max-width: 600px;
+
+```
+margin: auto;
+
+text-align: left;
+```
+
+}
+
+.evento {
+border-left: 3px solid #b76e79;
+
+```
+padding: 10px 20px;
+
+margin-bottom: 25px;
+```
+
+}
+
+.evento strong {
+font-size: 20px;
+}
+
+.evento p {
+margin: 5px 0;
+font-size: 16px;
+}
+
+/* FINAL */
+
+.final {
+padding-top: 120px;
+}
+
+.final h2 {
+font-size: 40px;
+}
+
+.grande {
+font-size: 30px !important;
+font-weight: bold;
+}
+
+.corazones {
+font-size: 35px;
+margin: 30px;
+}
+
+/* BOTONES */
+
+.controles {
+position: absolute;
+
+```
+bottom: 20px;
+
+left: 0;
+right: 0;
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+gap: 25px;
+```
+
+}
+
+.controles button {
+border: none;
+
+```
+padding: 12px 20px;
+
+border-radius: 25px;
+
+background: #b76e79;
+
+color: white;
+
+font-size: 15px;
+
+cursor: pointer;
+
+transition: 0.3s;
+```
+
+}
+
+.controles button:hover {
+transform: scale(1.05);
+}
+
+#contador {
+font-size: 14px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+```
+.contenedor {
+    padding: 10px;
+}
+
+.libro {
+    min-height: 90vh;
+}
+
+.pagina {
+    min-height: 80vh;
+
+    padding: 35px 20px 100px;
+}
+
+.contenido h1 {
+    font-size: 35px;
+}
+
+.contenido h2 {
+    font-size: 28px;
+}
+
+.contenido p {
+    font-size: 16px;
+}
+
+.foto-portada {
+    width: 220px;
+    height: 220px;
+}
+
+.foto {
+    width: 100%;
+    height: 250px;
+}
+
+.galeria {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.galeria img {
+    height: 130px;
+}
+
+.controles {
+    gap: 10px;
+}
+
+.controles button {
+    padding: 10px 14px;
+    font-size: 13px;
+}
+```
+
+}
